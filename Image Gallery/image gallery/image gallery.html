@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+   
+    <style>
+     
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+
+     #wrapper{
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+     }
+
+     .container{
+        height: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+     }
+
+     .container h1{
+        margin: 20px 0;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 3rem;
+     }
+
+     .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+     }
+
+     .card{
+        width: 32%;
+        position: relative;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+     }
+
+     .card img{
+        height: 100%;
+        width: 100%;
+        filter: grayscale(100%);
+        box-shadow: 0 0 20px #333;
+        object-fit: cover;
+     }
+
+     .card:hover{
+        transform: scale(1.03);
+        transition: 0.5s;
+        filter: drop-shadow(0 0 10px #333);
+     }
+
+     .card:hover img{
+         filter: grayscale(0%);
+     }
+
+     .card figcaption{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 25px;
+        width: 100%;
+        height: 20%;
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        opacity: 0;
+        border-radius: 0 0 10px 10px;
+        background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgb(255, 255, 255,0)100%);
+        transition: 0.3s;
+     }   
+
+     .card:hover figcaption{
+        opacity: 1;
+        transform: scale(1.03);
+     }
+
+    </style>
+
+</head>
+<body>
+    <div id="wrapper">
+    <div class="container">
+       <h1>My Gallery</h1>
+       <div class="gallery">
+
+        <figure class="card">
+            <img src="image/image1.jpg" alt="Image">
+            <figcaption>Image 1</figcaption>
+        </figure>
+ 
+        <figure class="card">
+            <img src="image/image2.jpeg" alt="Image">
+            <figcaption>Image 2</figcaption>
+        </figure>
+ 
+        <figure class="card">
+            <img src="image/image3.jpeg" alt="Image">
+            <figcaption>Image 3</figcaption>
+        </figure>
+ 
+        <figure class="card">
+            <img src="image/image4.jpeg" alt="Image">
+            <figcaption>Image 4</figcaption>
+        </figure>
+ 
+        <figure class="card">
+            <img src="image/image5.jpeg" alt="Image">
+            <figcaption>Image 5</figcaption>
+        </figure>
+ 
+        <figure class="card">
+            <img src="image/image6.jpeg" alt="Image">
+            <figcaption>Image 6</figcaption>
+        </figure>
+        
+        <figure class="card">
+            <img src="image/image7.jpeg" alt="Image">
+            <figcaption>Image 7</figcaption>
+        </figure>
+        
+        <figure class="card">
+            <img src="image/image8.jpeg" alt="Image">
+            <figcaption>Image 8</figcaption>
+        </figure>
+        
+        <figure class="card">
+            <img src="image/image9.jpeg" alt="Image">
+            <figcaption>Image 9</figcaption>
+        </figure>
+        
+        <figure class="card">
+            <img src="image/image10.jpg" alt="Image">
+            <figcaption>Image 10</figcaption>
+        </figure>
+        
+        <figure class="card">
+            <img src="image/image11.jpg" alt="Image">
+            <figcaption>Image 11</figcaption>
+        </figure>
+             
+        <figure class="card">
+            <img src="image/image12.jpg" alt="Image">
+            <figcaption>Image 12</figcaption>
+        </figure>
+             
+        <figure class="card">
+            <img src="image/image13.jpg" alt="Image">
+            <figcaption>Image 13</figcaption>
+        </figure>
+             
+        <figure class="card">
+            <img src="image/image14.jpg" alt="Image">
+            <figcaption>Image 14</figcaption>
+        </figure>
+             
+        <figure class="card">
+            <img src="image/image15.jpg" alt="Image">
+            <figcaption>Image 15</figcaption>
+        </figure>
+
+       </div>
+    </div>
+    </div>
+</body>
+</html>
